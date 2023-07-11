@@ -198,6 +198,7 @@ button {
 /* Burger */
 .burger-menu {
     position: relative;
+    display: none;
 }
 .burger-menu__border {
     border: 1px solid #DF0050;
@@ -514,6 +515,9 @@ button {
     }
     .header__menu_wrapper {
         display: none;
+    }
+    .burger-menu {
+        display: block;
     }
 }
 
