@@ -4,7 +4,7 @@ const swiper1 = new Swiper('.swiper1', {
     slidesPerView: 1,
     spaceBetween: 30,
     autoplay: {
-        delay: 3000,
+        delay: 11113000,
     },
     speed: 2000,
     spaceBetween: 30,
@@ -22,7 +22,7 @@ const swiper2 = new Swiper('.swiper2', {
     speed: 3000,
     autoplay: {
         enabled: true,
-        delay: 1500,
+        delay: 1001500,
     },
     // Navigation arrows
     navigation: {
