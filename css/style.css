@@ -195,6 +195,58 @@ button {
     color: #252627;
 
 }
+/* Burger */
+.burger-menu {
+    position: relative;
+}
+.burger-menu__border {
+    border: 1px solid #DF0050;
+    margin-bottom: 5px;
+    width: 25px;
+}
+.burger-menu__menu {
+    position: absolute;
+    display: none;
+    top: 60px;
+    background: #fff;
+    padding: 10px;
+}
+.burger-menu__menu-item {
+    position: relative;
+    padding: 15px;
+    width: 200px;
+}
+.burger-menu__menu-item:hover {
+    background-color: #abacb6;
+}
+.burger-menu__menu-item_link {
+    color: #252627;
+}
+.burger-menu__menu-item_link:hover {
+    color: #fff;
+}
+.burger-menu__menu-item_submenu {
+    position: absolute;
+    display: none;
+    background: #fff;
+    padding: 10px;
+    left: 210px;
+}
+.burger-menu__menu-item_submenu-item {
+    padding: 15px;
+    width: 200px;
+}
+.burger-menu__menu-item_submenu-item:hover {
+    background-color: #abacb6;
+}
+.burger-menu__menu-item_submenu-item_link {
+    color: #252627;
+}
+.burger-menu__menu-item_submenu-item_link:hover {
+    color: #fff;
+}
+
+
 /* MAIN */
 .main {
     padding: 250px 0 84px;
@@ -495,6 +547,7 @@ button {
     }
     .main__title {
         font-size: 50px;
+        width: auto;
     }
     .slider__slide-img_wrapper, .slider__slide-img2_wrapper {
         background-position: center;
@@ -522,6 +575,9 @@ button {
         grid-template-rows: auto auto;
         column-gap: 45px;
     }
+    .aboutMedication__desc_wrapper {
+        width: auto;
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -541,9 +597,6 @@ button {
     }
     .aboutMedication__title {
         font-size: 25px;
-    }
-    .aboutMedication__desc_wrapper {
-        width: auto;
     }
     .aboutMedication__desc {
         font-size: 18px;
@@ -565,11 +618,19 @@ button {
     }
 }
 @media (max-width: 480px) {
+    .container {
+		padding: 0 15px;
+		width: 100%;
+	}
     .main__title {
         font-size: 30px;
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+    .container {
+		padding: 0 15px;
+		width: 100%;
+	}
     .main__title {
         font-size: 30px;
     }
@@ -578,5 +639,14 @@ button {
         align-items: flex-start;
         gap: 15px;
         flex-direction: column;
+    }
+    .slider__slide-offer_text {
+        width: auto;
+    }
+    .specialist-opinion__title {
+        font-size: 18px;
+    }
+    .specialist-opinion__navBtn_title {
+        font-size: 14px;
     }
 }
